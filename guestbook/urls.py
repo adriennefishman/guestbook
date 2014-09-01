@@ -8,6 +8,7 @@ urlpatterns = patterns('',
     # url(r'^$', 'guestbook.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
     #hello
+    #hi
 
     url(r'^admin/', include(admin.site.urls)),
 )
