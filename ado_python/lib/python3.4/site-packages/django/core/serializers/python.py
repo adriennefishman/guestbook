@@ -93,7 +93,7 @@ def Deserializer(object_list, **options):
         model_fields = Model._meta.get_all_field_names()
 
         # Handle each field
-        for (field_name, field_value) in six.iteritems(d["fields"]):
+        for (field_name, field_value) in six.items(d["fields"]):
 
             if ignore and field_name not in model_fields:
                 # skip fields no longer on model

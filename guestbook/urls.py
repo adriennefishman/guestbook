@@ -3,13 +3,23 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 admin.autodiscover()
 
-urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'guestbook.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
-    #hello
-    #hi
-    #sup
+from guestbook import views
 
-    url(r'^admin/', include(admin.site.urls)),
+from django.views.generic import TemplateView
+
+urlpatterns = patterns('',
+    (r'^$', views.index),
+    (r'^update/$', views.update),
 )
+
+# urlpatterns = patterns('',
+#     # Examples:
+#     url(r'^$', 'guestbook.views.index', name='index'),
+# #     # url(r'^blog/', include('blog.urls')),
+
+# #     url(r'^admin/', include(admin.site.urls)),
+# )
+
+# urlpatterns = [
+#     url(r'^$', views.index, name='index'),
+# ]
