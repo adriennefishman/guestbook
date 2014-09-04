@@ -16,9 +16,8 @@ def index(request):
     context_instance=RequestContext(request))
 
 def update(request):
-    """Once the user fills out the form, this is a method that takes a web request and returns the web response of the index.html template.
+    """This method saves all of the user input fields from the form.
 
-    It saves all of the user input fields from the form.
     It then takes the Python dictionary data structure and returns it as a JSON string.
     """
     guestbook_entries = GuestbookEntryForm.objects.all()
