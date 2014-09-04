@@ -11,9 +11,10 @@ $( document ).ready(function() {
                                 alert("There is an error");
                         }
                         else {
-                                $('.results').append("<p>" + data.name + data.email + data.comment + "</p>");
+                                var result = '<div class="entry" id="'+guestbook_entry.id+'">';
+                                $('.results').append("<div>" + data.name + data.email + data.comment + "</div>");
                         }
-        	}, "json").fail(function() {
+                }, "json").fail(function() {
                         alert("there is an error");
                 });
         });

@@ -7,6 +7,10 @@ from guestbook import views
 
 from django.views.generic import TemplateView
 
+"""These are the urls for index and update.
+
+	They both point to the same index.html template.
+	"""
 urlpatterns = patterns('',
     (r'^$', views.index),
     (r'^update/$', views.update),

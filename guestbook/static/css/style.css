@@ -1,0 +1,61 @@
+.logo {
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	margin-bottom: 50px;
+}
+
+.icons {
+	position: absolute;
+	top: 20px;
+	right: 0px;
+	margin-bottom: 50px;
+}
+
+.title_field {
+	margin-top: 200px;
+	font-family: "Helvetica";
+	font-weight: bold;
+	font-size: 60px;
+	text-align: center;
+	clear:both;
+}
+
+#guestbook_entry_form {
+	padding-top: 50px;
+}
+
+label {
+	font-family: "Helvetica";
+	font-weight: bold;
+	font-size: 20px;
+	color: red;
+	padding-right: 10px;
+	display: block;
+}
+
+input {
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+#submit_button {
+	margin-top: 20px;
+}
+
+.label_fields {
+	font-family: "Helvetica";
+	font-weight: bold;
+	font-size: 20px;
+	text-align: justify;
+	padding-left: 200px;
+}
+
+.comment_result {
+	margin-bottom: 40px;
+	font-family: "Helvetica";
+	font-weight: bold;
+	font-size: 20px;
+	text-align: justify;
+	padding-left: 200px;
+}
